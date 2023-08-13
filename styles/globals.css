@@ -68,5 +68,5 @@ body {
 }
 
 .contactInput {
-  @apply p-5 rounded-2.5xl bg-transparent border border-neutral-200 text-white placeholder:text-white text-base;
+  @apply p-5 rounded-2.5xl bg-transparent border border-neutral-200 text-white placeholder:text-white text-base w-full;
 }
