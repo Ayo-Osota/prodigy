@@ -1,27 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  @apply scroll-smooth scroll-mt-10;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-mainBg text-neutral-200
+}
+
+.container {
+  --max-width: 1286px;
+  --padding: 1.5rem;
+
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}
+
+.container-tight {
+  --max-width: 1103px;
+}
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .images-wrap {
+    flex-wrap: nowrap !important;
+  }
+}
+
+.indicator.active {
+  @apply border-none bg-primary;
+}
+
+.arrow {
+  @apply aspect-square border border-neutral-900/90 rounded-full first-of-type:right-28 -bottom-24 items-center justify-center;
+}
+
+.arrow:first-of-type {
+  left: auto !important;
+}
+
+.arrow.disabled {
+  @apply border-neutral-900;
+  cursor: not-allowed !important;
+}
+
+.arrow.disabled .chevron {
+  @apply text-neutral-900;
+}
+
+.social:last-child h1 {
+  @apply last:text-2xl md:last:text-4.5xl;
+}
+
+.contactInput {
+  @apply p-5 rounded-2.5xl bg-transparent border border-neutral-200 text-white placeholder:text-white text-base;
 }
