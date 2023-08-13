@@ -16,7 +16,7 @@ const ContactForm = () => {
         <button
           type="submit"
           title="Send message"
-          className="py-4.5 px-16 font-bold bg-primary text-secondary rounded-2.5xl self-start"
+          className="py-4.5 px-7 md:px-16 font-bold bg-primary text-secondary rounded-2.5xl self-start text-sm md:text-base"
         >Send message</button>
       </form>
     </div>

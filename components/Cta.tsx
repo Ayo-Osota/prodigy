@@ -16,7 +16,7 @@ const Cta = () => {
           understanding of users, collaboration with cross-functional teams, and
           emphasis on user-friendly products that add value and drive growth.
         </p>
-        <a href="#" className="inline-flex bg-neutral-800 rounded-2.5xl mt-4 md:mt-7 py-4 px-16 text-sm">Hire me for your next project</a>
+        <a href="#" className="inline-flex bg-neutral-800 rounded-2.5xl mt-4 md:mt-7 py-4 px-10 md:px-16 text-sm whitespace-nowrap">Hire me for your next project</a>
       </div>
     </section>
   );

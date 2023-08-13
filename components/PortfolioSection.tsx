@@ -14,14 +14,14 @@ const indicators = () => (
 
 const responsiveSettings = [
   {
-    breakpoint: 1024,
+    breakpoint: 1280,
     settings: {
       slidesToShow: 4,
       slidesToScroll: 4,
     },
   },
   {
-    breakpoint: 768,
+    breakpoint: 1024,
     settings: {
       slidesToShow: 3,
       slidesToScroll: 3,
@@ -32,6 +32,7 @@ const responsiveSettings = [
     settings: {
       slidesToShow: 2,
       slidesToScroll: 2,
+      canSwipe: true
     },
   },
 ];
@@ -71,9 +72,10 @@ const PortfolioSetion = () => {
           indicators={projects.length < 2 ? indicators : false}
           infinite={false}
           responsive={responsiveSettings}
-          slidesToScroll={1}
+          slidesToScroll={0}
           slidesToShow={1}
           arrows={projects.length < 2}
+          canSwipe={false}
           cssClass="flex gap-4"
         >
           {projects.map((project) => {

@@ -5,11 +5,11 @@
 @tailwind utilities;
 
 html {
-  @apply scroll-smooth scroll-mt-10;
+  @apply scroll-smooth;
 }
 
 body {
-  @apply bg-mainBg text-neutral-200
+  @apply font-serif bg-mainBg text-neutral-200;
 }
 
 .container {
