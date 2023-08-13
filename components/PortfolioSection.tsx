@@ -79,8 +79,8 @@ const PortfolioSetion = () => {
           {projects.map((project) => {
             const { id } = project;
             return (
-              <div>
-                <PortfolioCard {...project} key={id} />
+              <div key={id}>
+                <PortfolioCard {...project}  />
               </div>
             );
           })}
