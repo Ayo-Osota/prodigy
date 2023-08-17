@@ -2,6 +2,7 @@ import { socialMedia } from "@/data";
 import ContactForm from "./ContactForm";
 
 const ContactSection = () => {
+  
   return (
     <section id="contact" className="pb-12 md:pb-20 scroll-mt-10">
       <div className="container container-tight even-columns items-center mt-10 md:mt-30">
@@ -12,7 +13,7 @@ const ContactSection = () => {
               return (
                 <li key={id} className="social">
                   <a href={link}>
-                    <h1 className="text-4xl md:text-8xl font-bold">
+                    <h1 className="text-4xl lg:text-8xl font-bold">
                       {name}
                     </h1>
                   </a>

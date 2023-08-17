@@ -64,7 +64,7 @@ body {
 }
 
 .social:last-child h1 {
-  @apply last:text-2xl md:last:text-4.5xl;
+  @apply last:text-2xl lg:last:text-4.5xl;
 }
 
 .contactInput {
