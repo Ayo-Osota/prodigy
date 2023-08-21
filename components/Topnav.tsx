@@ -28,7 +28,7 @@ const Topnav = () => {
         </ul>
       </nav>
       <a
-        href="#"
+        href="https://docs.google.com/document/d/1YXpFteSGXlL103ZhktuY8YfMSFYOSFxF/edit?usp=sharing&ouid=113707304538508446142&rtpof=true&sd=true"
         className="bg-primary text-secondary rounded-2.5xl px-6 md:px-14 py-2 font-bold"
       >
         Resume
