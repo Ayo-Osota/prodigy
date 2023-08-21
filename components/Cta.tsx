@@ -3,10 +3,10 @@ import ctaImg from "../public/assets/prodigy.png";
 
 const Cta = () => {
   return (
-    <section className="even-columns items-center container mt-20 md:mt-52">
+    <section className="even-columns items-center container mt-20 md:mt-10 lg:mt-44">
       <Image src={ctaImg} alt="Promise" />
       <div>
-        <h2 className="text-3xl lg:text-5xl font-bold leading-tight">
+        <h2 className="text-2xl xs:text-3xl lg:text-5xl font-bold leading-tight">
           Hey there! Meet{" "}
           <span className="text-primary">Orimadegun Promise</span>
         </h2>

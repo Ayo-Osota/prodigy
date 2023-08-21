@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': '405px',
+        ...defaultTheme.screens,
+      },
       fontFamily: {
         'serif': ['Montserrat', ...defaultTheme.fontFamily.serif],
       },

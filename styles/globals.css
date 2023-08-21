@@ -17,6 +17,7 @@ body {
   --padding: 1.5rem;
 
   width: min(var(--max-width), 100% - (var(--padding) * 2));
+  max-width: min(var(--max-width), 100% - (var(--padding) * 2));
   margin-inline: auto;
 }
 
@@ -69,4 +70,20 @@ body {
 
 .contactInput {
   @apply p-5 rounded-2.5xl bg-transparent border border-neutral-200 text-white placeholder:text-white text-base w-full;
+}
+
+.blur {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.58) 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0.8;
+  filter: blur(97.5px);
+}
+
+.stack-icon {
+  width: 32px;
+}
+
+@media (min-width: 768px) {
+  .stack-icon {
+      width: 70px; 
+  }
 }
