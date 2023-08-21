@@ -13,7 +13,7 @@ const ContactSection = () => {
               return (
                 <li key={id} className="social">
                   <a href={link}>
-                    <h1 className="text-4xl lg:text-8xl font-bold">
+                    <h1 className="text-2xl xs:text-4xl lg:text-8xl font-bold">
                       {name}
                     </h1>
                   </a>

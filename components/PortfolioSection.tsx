@@ -62,7 +62,7 @@ const properties = {
 const PortfolioSetion = () => {
   return (
     <section id="portfolio" className="container mt-10 md:mt-30 scroll-mt-10">
-      <h2 className="text-3xl md:text-5xl font-bold text-center max-w-[30ch] mx-auto">
+      <h2 className="text-2xl xs:text-3xl md:text-5xl font-bold text-center max-w-[30ch] mx-auto">
         Explore the world of my <span className="text-primary">portfolio</span>
       </h2>
       <div className="w-full mt-8 md:mt-20">

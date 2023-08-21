@@ -70,7 +70,7 @@ const HeroSection = () => {
   useEffect(() => {
     let autoSlide = setInterval(() => {
       slide(-1);
-    }, 5000);
+    }, 1000);
     return () => {
       clearInterval(autoSlide);
     };
@@ -108,7 +108,7 @@ const HeroSection = () => {
               left: `${calculatedLeft}`,
           };
           return (
-            <li style={style} className="absolute transition-all duration-500" key={stack.id}>
+            <li style={style} className="absolute transition-all duration-1000" key={stack.id}>
               <stack.icon />
             </li>
           );
@@ -120,7 +120,7 @@ const HeroSection = () => {
               left: `${calculatedLeft}`,
           };
           return (
-            <li style={style} className="absolute transition-all duration-500" key={stack.id}>
+            <li style={style} className="absolute transition-all duration-1000" key={stack.id}>
               <stack.icon />
             </li>
           );
